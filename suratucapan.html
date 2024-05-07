@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Reyshar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="suratucapan.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="balon.png" alt="Birthday Cake">
+                <h2>Selamat Ulang Tahun !</h2>
+            </div>
+            <div class="card-body">
+                <p id="wish"></p>
+                <div class="buttons">
+                    <button onclick="showWishes()">Lihat Ucapan</button>
+                    <button id="playMusicBtn">Nyalakan Musik</button>
+                    <button id="prevWishBtn" onclick="prevWish()" disabled>Back</button>
+                    <button id="nextWishBtn" onclick="nextWish()">Next</button>
+                    <button id="finishBtn" disabled>Selesai</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="suratucapan.js"></script>
+    <script src="confetti.js"></script>
+</body>
+</html>

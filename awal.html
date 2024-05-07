@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hallowww:)</title>
+    <link rel="stylesheet" href="awal.css">
+</head>
+<body>
+    <div id="passwordContainer">
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    <div class="countdown-container" id="countdownContainer" style="display: none;">
+        <h1 class="countdown-title">COUNTDOWN</h1>
+        <div class="countdown" id="countdown">
+            <div class="time-block">
+                <span id="days"></span>
+                <span>Days</span>
+            </div>
+            <div class="time-block">
+                <span id="hours"></span>
+                <span>Hours</span>
+            </div>
+            <div class="time-block">
+                <span id="minutes"></span>
+                <span>Minutes</span>
+            </div>
+            <div class="time-block">
+                <span id="seconds"></span>
+                <span>Seconds</span>
+            </div>
+        </div>
+        <p id="message" class="message"></p>
+        <button id="sendWishesButton" disabled>Click Me</button>
+    </div>
+
+    <script src="awal.js"></script>
+</body>
+</html>
+
+

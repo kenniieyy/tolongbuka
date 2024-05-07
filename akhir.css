@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center; /* Memposisikan gambar secara horizontal ke tengah */
+    align-items: center; /* Memposisikan gambar secara vertikal ke tengah */
+    overflow: hidden; /* Mengunci scrolling */
+    height: 100vh; /* Menjadikan tinggi body sebesar tinggi layar */
+    background-color: #000000;
+}
+
+.bg-image {
+    max-width: 100%; /* Membuat gambar responsif */
+    max-height: 100%; /* Membuat gambar responsif */
+    width: auto; /* Membuat gambar responsif */
+    height: auto; /* Membuat gambar responsif */
+    object-fit: contain; /* Gambar akan tetap proporsional dan tidak terdistorsi */
+}
+
+/* Responsif untuk layar dengan lebar kurang dari atau sama dengan 600px */
+/* @media screen and (max-width: 600px) {
+    .bg-image {
+        width: 90%; 
+        height: auto; 
+    }
+} */

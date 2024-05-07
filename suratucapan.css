@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+  overflow: hidden; /* Mencegah penggeseran halaman */
+}
+
+body {
+  background: radial-gradient(circle, #333333, #000000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 90%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Tengahkan konten vertikal */
+}
+
+.card-header {
+  background: linear-gradient(to right, #808080, #333333); /* Gradasi abu-abu pada header */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%; /* Pastikan header mengikuti lebar kontainer */
+}
+
+.card-header img {
+  max-width: 150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-header h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  color: #fff;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-body {
+  padding: 40px;
+  text-align: center;
+  color: #333;
+  width: 100%; /* Pastikan body mengisi lebar kontainer */
+}
+
+#wish {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 10px 10px;
+  background-color: #808080; /* Warna abu-abu pada tombol */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #333333; /* Warna abu-abu gelap pada hover tombol */
+  transform: scale(1.1);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+/* Responsif untuk layar dengan lebar kurang dari atau sama dengan 600px */
+/* @media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  .card-body {
+    padding: 30px;
+  }
+  .card-header {
+    padding: 15px;
+  }
+  .card-header img {
+    max-width: 120px;
+    margin-bottom: 15px;
+  }
+  .card-header h2 {
+    font-size: 28px;
+  }
+  #wish {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  button {
+    padding: 8px 16px;
+    font-size: 10px;
+    margin-right: 8px;
+  }
+} */
+
